@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imd-intel.com/sitemap.xml
