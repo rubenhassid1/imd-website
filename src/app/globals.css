@@ -23,10 +23,18 @@ body {
   background: #ffffff;
   color: #1b1b1b;
   font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
+}
+
+/* Selection color */
+::selection {
+  background: #1a3c5e;
+  color: #ffffff;
 }
 
 /* Fade-in animation for sections */
@@ -42,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.7s ease-out forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   opacity: 0;
 }
 
@@ -57,5 +65,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .radar-sweep {
-  animation: radarSweep 20s linear infinite;
+  animation: radarSweep 25s linear infinite;
 }
